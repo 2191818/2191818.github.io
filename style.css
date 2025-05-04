@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
   background-color: #e9ebec;
   color: black;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 section,
@@ -80,6 +88,7 @@ footer {
 .profile-info h1 {
   margin: 0;
   font-size: 46px;
+  font-weight: bold;
 }
 
 .profile-info p {
@@ -217,4 +226,15 @@ footer {
   margin: 25px auto;
   justify-content: center;
   font-size: 75px;
+}
+
+.contact-info {
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 20%;
+  margin: 20px auto;
+  justify-content: center;
+  border: #004400 solid 2px;
+  background-color: white;
 }
