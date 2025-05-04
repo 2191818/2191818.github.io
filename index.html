@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Arsalan Saeed's Resume</title>
+    <title>Arsalan's Profile</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,101 +22,66 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand">Muhammad Arsalan Saeed</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >About Me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="projects.html"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
+    <button class="mode-toggle-btn" aria-label="Toggle dark mode"></button>
+    <br />
+    <header class="profile-card">
+      <div class="profile-pic-square">
+        <img src="images/Headshot (2).png" alt="Profile Image" />
+      </div>
+      <div class="profile-info">
+        <h1>Muhammad Arsalan Saeed</h1>
+        <p>Software Developer</p>
+        <div class="social-icons">
+            <a href="https://github.com/2191818" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Resume</a></li>
-                <li><a class="dropdown-item" href="#">Links</a></li>
-                <li><a class="dropdown-item" href="#">About</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+              <a href="https://www.linkedin.com/in/muhammad-arsalan-saeed/" target="_blank" aria-label="Linkedin">
+                <i class="fa-brands fa-linkedin"></i>              </a>
+              <a href="https://www.instagram.com/arsalan.360/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
         </div>
       </div>
-    </nav>
-    <header>
-      <h1>Muhammad Arsalan Saeed</h1>
-      <p>Software Developer</p>
     </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my digital space! 🚀 This website is my super cool digital
-        resume, showing off all the fantastic stuff about me in one place.
-        Explore my skills, projects, and experiences to see why I'm the perfect
-        fit for your team. Let's make the professional connection happen! 🌟
-      </p>
-    </section>
+    <section id="workContact" style="text-align: center;">
+        <a
+          href="MuhammadArsalanSaeedCV.pdf"
+          download="MuhammadArsalanSaeedCV.pdf"
+          class="custom-btn"
+        >
+          Download Resume <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      
+        <a
+          href="MuhammadArsalanSaeedCV.pdf"
+          download="MuhammadArsalanSaeedCV.pdf"
+          class="custom-btn"
+        >
+          Contact Me
+        </a>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>View all my projects I've worked on</p>
-      <div class="card" style="width: 18rem">
-        <img src="images/Headshot (2).png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">nba-api</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+      <div class="work-card">
+        <button type="button" class="toggle-btn active" onclick="toggleSection('projects')">Projects</button>
+        <button type="button" class="toggle-btn" onclick="toggleSection('skills')">Skills</button>
       </div>
-    </section>
+      
+      <div id="projects" class="content-section">
+        <p>This is the Projects section.</p>
+      </div>
+      
+      <div id="skills" class="content-section" style="display: none;">
+        <p>This is the Skills section.</p>
+      </div>
+      
+
+    <div class="about-card">
+        <button type="button" class="custom-btn">About Me</button>
+        <button type="button" class="custom-btn">About Site</button>
+    </div>
+
     <footer>
-      <p>Created by Muhammad Arsalan Saeed</p>
+      <p>Muhammad Arsalan Saeed. 2025 All Rights Reserved</p>
     </footer>
   </body>
 </html>
