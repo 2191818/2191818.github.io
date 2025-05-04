@@ -22,7 +22,7 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
-    <button class="mode-toggle-btn" aria-label="Toggle dark mode"></button>
+    <button class="mode-toggle-btn" aria-label="Toggle dark mode"><i class="fa-regular fa-lightbulb"></i></button>
     <br />
     <header class="profile-card">
       <div class="profile-pic-square">
@@ -53,35 +53,169 @@
         </a>
       
         <a
-          href="MuhammadArsalanSaeedCV.pdf"
-          download="MuhammadArsalanSaeedCV.pdf"
+          href="contact.html"
           class="custom-btn"
         >
-          Contact Me
+          Contact Me 
         </a>
       </section>
-
+    
       <div class="work-card">
-        <button type="button" class="toggle-btn active" onclick="toggleSection('projects')">Projects</button>
-        <button type="button" class="toggle-btn" onclick="toggleSection('skills')">Skills</button>
+        <button type="button" class="toggle-btn active" onclick="showSection('projects')">Projects</button>
+        <button type="button" class="toggle-btn" onclick="showSection('skills')">Skills</button>
       </div>
       
       <div id="projects" class="content-section">
-        <p>This is the Projects section.</p>
+        <div class="project-card" style="width: 18rem;">
+          <img src="images/Headshot (2).png" class="card-img-top" alt="...">
+        </div>
       </div>
       
-      <div id="skills" class="content-section" style="display: none;">
-        <p>This is the Skills section.</p>
-      </div>
-      
+      <div id="skills" class="content-section" style="display: none; text-align: center;">
+        <p>Using Now: </p>
+        <div class="skills-card">
+          <div class="skill-item">
+            <i style="background-color: black; color: #efd81d;" class="fa-brands fa-js"></i>          
+            <p>JAVASCRIPT</p>
+          </div>
+          <div class="skill-item">
+            <i style="color: #5ed3f3;" class="fa-brands fa-react"></i>
+            <p>TYPESCRIPT</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-code"></i>
+            <p>BASH</p>
+          </div>
+          <div class="skill-item">
+            <i style="color: #6a1577;" class="fa-brands fa-c"></i>          
+            <p>C#</p>
+          </div>
+          <div class="skill-item">
+            <i style="color: #7377ad;" class="fa-brands fa-php"></i>          
+            <p>PHP</p>
+          </div>
+          <div class="skill-item">
+            <i style="color: #f0931c;" class="fa-brands fa-java"></i>          
+            <p>JAVA</p>
+          </div>
+          <div class="skill-item">
+            <i style="color: #f7d54d;" class="fa-brands fa-python"></i>          
+            <p>PYTHON</p>
+          </div>
+          <div class="skill-item">
+            <i style="color: #dd4b25;" class="fa-brands fa-css3-alt"></i>
+            <i style="color: #254bdd;" class="fa-brands fa-html5"></i>          
+            <p>HTML/CSS</p>
+          </div>
+          </div>
+          <p>Learning/Improving Now: </p>
+          <div class="skills-card">
+            <div class="skill-item">
+              <i style="background-color: black; color: #efd81d;" class="fa-brands fa-js"></i>          
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #5ed3f3;" class="fa-brands fa-react"></i>
+              <p>TYPESCRIPT</p>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-code"></i>
+              <p>BASH</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #6a1577;" class="fa-brands fa-c"></i>          
+              <p>C#</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #7377ad;" class="fa-brands fa-php"></i>          
+              <p>PHP</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #f0931c;" class="fa-brands fa-java"></i>          
+              <p>JAVA</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #f7d54d;" class="fa-brands fa-python"></i>          
+              <p>PYTHON</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #dd4b25;" class="fa-brands fa-css3-alt"></i>
+              <i style="color: #254bdd;" class="fa-brands fa-html5"></i>          
+              <p>HTML/CSS</p>
+            </div>
+            </div>
+          <p>Development Tools: </p>
+          <div class="skills-card">
+            <div class="skill-item">
+              <i style="background-color: black; color: #efd81d;" class="fa-brands fa-js"></i>          
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #5ed3f3;" class="fa-brands fa-react"></i>
+              <p>TYPESCRIPT</p>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-code"></i>
+              <p>BASH</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #6a1577;" class="fa-brands fa-c"></i>          
+              <p>C#</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #7377ad;" class="fa-brands fa-php"></i>          
+              <p>PHP</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #f0931c;" class="fa-brands fa-java"></i>          
+              <p>JAVA</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #f7d54d;" class="fa-brands fa-python"></i>          
+              <p>PYTHON</p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #dd4b25;" class="fa-brands fa-css3-alt"></i>
+              <i style="color: #254bdd;" class="fa-brands fa-html5"></i>          
+              <p>HTML/CSS</p>
+            </div>
+            </div>
+          <p>Relavent Coursework</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Course</th>
+                <th scope="col">Relevancy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>John</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+      <script src="scripts.js"></script>
+      
     <div class="about-card">
         <button type="button" class="custom-btn">About Me</button>
         <button type="button" class="custom-btn">About Site</button>
     </div>
-
-    <footer>
+    
+    <footer >
+      <div >
       <p>Muhammad Arsalan Saeed. 2025 All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>

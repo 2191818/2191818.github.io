@@ -12,6 +12,16 @@ footer {
   text-align: center;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+}
+
 .mode-toggle-btn {
   position: absolute;
   top: 10px;
@@ -28,6 +38,7 @@ footer {
 .mode-toggle-btn:hover {
   background: #0c151d;
   border-color: #0c151d;
+  color: white;
 }
 
 .profile-card {
@@ -152,6 +163,29 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  font-weight: bold;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.project-card img {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 20px auto;
+  justify-content: center;
+  width: 360px;
+  height: 225px;
 }
 
 .about-card {
@@ -162,4 +196,25 @@ footer {
   max-width: 100%;
   margin: 20px auto;
   justify-content: center;
+}
+
+.skills-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 25px auto;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.skill-item i {
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 25px auto;
+  justify-content: center;
+  font-size: 75px;
 }

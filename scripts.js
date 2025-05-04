@@ -1,17 +1,14 @@
-function toggleSection(sectionToShow) {
-  // Hide all sections
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("skills").style.display = "none";
+function showSection(sectionId) {
+  const sections = document.querySelectorAll(".content-section");
+  sections.forEach((section) => {
+    section.style.display = section.id === sectionId ? "block" : "none";
+  });
 
-  // Show the selected section
-  document.getElementById(sectionToShow).style.display = "block";
-
-  // Toggle button active states
   const buttons = document.querySelectorAll(".toggle-btn");
-  buttons.forEach((btn) => {
-    btn.classList.remove("active");
-    if (btn.textContent.trim().toLowerCase() === sectionToShow) {
-      btn.classList.add("active");
-    }
+  buttons.forEach((button) => {
+    button.classList.toggle(
+      "active",
+      button.getAttribute("onclick").includes(sectionId)
+    );
   });
 }
