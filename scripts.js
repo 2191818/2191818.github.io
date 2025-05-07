@@ -21,3 +21,7 @@ function changeSlide(step) {
   currentSlide = (currentSlide + step + slides.length) % slides.length;
   slides[currentSlide].classList.add("active");
 }
+
+function showDarkModeAlert() {
+  alert("Dark mode is not supported on this site yet.\nBurn your eyelids 🔥😎");
+}
