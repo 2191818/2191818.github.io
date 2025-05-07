@@ -69,39 +69,175 @@
     </p>
     <br />
     <section class="about-site">
-      <h2>About This Site</h2>
-
+      <h2 style="font-weight: bold">About This Site</h2>
+      <br />
+      <div class="slider-buttons">
+        <button onclick="changeSlide(-1)">←</button>
+        <button onclick="changeSlide(1)">→</button>
+      </div>
+      <hr class="section-divider" />
       <div class="slider-container">
         <div class="slide active">
           <h3>Purpose</h3>
-          <p>
-            This site exists to demonstrate my software development skills,
-            showcase projects, and serve as a living resume.
-          </p>
+          <div class="card-row">
+            <div class="card text-bg-light">
+              <div class="card-header">Initial Goal</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Built to test how quickly I could develop a resume-style
+                  website using modern design practices.
+                </p>
+                <p>🚀</p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">Inspiration</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Inspired by the growing trend of digital resumes, I wanted my
+                  own online presence to reflect the same.
+                </p>
+                <p>🌐</p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">Commitment</div>
+              <div class="card-body">
+                <p class="card-text">
+                  This project was also a personal milestone. Start and finish
+                  something from beginning to end without dropping it halfway.
+                </p>
+                <p>🎯</p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">Final Focus</div>
+              <div class="card-body">
+                <p class="card-text">
+                  While it began as a way to showcase front-end development
+                  skills, it evolved into a clean, focused platform for
+                  presenting my background and work.
+                </p>
+                <p>📋</p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">Future Readiness</div>
+              <div class="card-body">
+                <p class="card-text">
+                  The site serves as a foundation I can build on — ready to
+                  evolve into a blog, portfolio, or interactive playground as my
+                  skills and goals grow.
+                </p>
+                <p>🔧</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="slide">
           <h3>Creation Process</h3>
-          <p>
-            Built from scratch with a focus on clean structure, design planning,
-            reusable components, and version control.
-          </p>
+          <div class="card-row">
+            <div class="card text-bg-light">
+              <div class="card-header">STEP 1</div>
+              <div class="card-body">
+                <h5 class="card-title">Initial Concept</h5>
+                <p class="card-text">
+                  Planned as a single-page layout mirroring the structure of my
+                  resume.
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">STEP 2</div>
+              <div class="card-body">
+                <h5 class="card-title">Visual Inspiration</h5>
+                <p class="card-text">
+                  Revised the layout after exploring Figma templates and UI
+                  inspirations.
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">STEP 3</div>
+              <div class="card-body">
+                <h5 class="card-title">Design Planning</h5>
+                <p class="card-text">
+                  Outlined a clear visual and functional direction before
+                  development began.
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">STEP 4</div>
+              <div class="card-body">
+                <h5 class="card-title">Iterative Development</h5>
+                <p class="card-text">
+                  Built and adjusted features on the fly, learning and
+                  implementing as I went.
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-light">
+              <div class="card-header">STEP 5</div>
+              <div class="card-body">
+                <h5 class="card-title">Performance Focus</h5>
+                <p class="card-text">
+                  Continuously refined data and layout choices to keep the site
+                  fast and user-friendly.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="slide">
+        <div style="text-align: center" class="slide">
           <h3>Technologies Used</h3>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Bootstrap for layout and styling</li>
-            <li>Font Awesome for icons</li>
-            <li>GitHub Pages for deployment</li>
-          </ul>
+          <div class="skills-card">
+            <div class="skill-item">
+              <i
+                class="fa-brands fa-js"
+                style="background-color: black; color: #efd81d"
+              ></i>
+              <p>JAVASCRIPT</p>
+              <p>
+                Used to implement small interactive features and functionality
+              </p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #254bdd" class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+              <p>
+                Used to define the layout and structure of the site’s static
+                pages.
+              </p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #dd4b25" class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+              <p>
+                Used to style the site, ensuring a consistent and responsive
+                visual design.
+              </p>
+            </div>
+            <div class="skill-item">
+              <i style="color: #dd4b25" class="fa-brands fa-css3-alt"></i>
+              <p>BOOTSTRAP</p>
+              <p>
+                Used to integrate responsive, pre-built components and
+                streamline UI development.
+              </p>
+            </div>
+          </div>
+          <div style="font-weight: bold" class="skill-item">
+            <i class="fa-brands fa-github" style="color: #58267c"></i>
+            <p>GITHUB</p>
+            <p>
+              Used for version control, repository management, and deploying the
+              website via GitHub Pages.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="slider-buttons">
-        <button onclick="changeSlide(-1)">←</button>
-        <button onclick="changeSlide(1)">→</button>
       </div>
     </section>
 
@@ -115,5 +251,11 @@
     >
       Go Home
     </a>
+    <br />
+    <footer>
+      <div>
+        <p>@2025 Muhammad Arsalan Saeed. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
