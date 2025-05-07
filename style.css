@@ -363,3 +363,35 @@ footer {
   font-size: 16px;
   font-weight: normal;
 }
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
+.slide {
+  display: none;
+  text-align: justify;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-buttons button {
+  padding: 8px 16px;
+  margin: 0 10px;
+  font-weight: bold;
+  background-color: #004400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
