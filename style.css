@@ -9,7 +9,7 @@ html,
 body {
   width: 100%;
   background-color: #e9ebec;
-  color: black;
+  color: #3d3d3d;
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -82,7 +82,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: black;
 }
 
 .profile-info h1 {
@@ -105,7 +104,7 @@ footer {
 .social-icons a {
   text-decoration: none;
   font-size: 25px;
-  color: #000;
+  color: #3d3d3d;
   transition: background-color 1s ease;
 }
 
@@ -123,11 +122,16 @@ footer {
   font-weight: bold;
   transition: background-color 1s ease;
   background-color: white;
-  color: black;
+  color: #3d3d3d;
   border: none;
 }
 
 .custom-btn:hover {
+  background-color: #004400;
+  color: white;
+}
+
+.custom-btn.active {
   background-color: #004400;
   color: white;
 }
@@ -152,7 +156,7 @@ footer {
   font-weight: bold;
   transition: background-color 0.6s ease;
   background-color: white;
-  color: black;
+  color: #3d3d3d;
   border: none;
 }
 
@@ -170,7 +174,6 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  font-weight: bold;
 }
 
 .about-card {
@@ -184,13 +187,12 @@ footer {
 }
 
 .skills-card {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /* 2 columns */
   padding: 15px;
   border-radius: 10px;
   max-width: 100%;
-  margin: 25px auto;
-  justify-content: center;
+  margin: 25px;
   font-weight: bold;
 }
 
@@ -213,6 +215,7 @@ footer {
   justify-content: center;
   border: #004400 solid 3px;
   background-color: white;
+  color: #3d3d3d;
 }
 
 .flip-card {
@@ -229,7 +232,6 @@ footer {
   height: 100%;
   transition: transform 1s;
   transform-style: preserve-3d;
-  font-weight: bold;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -245,6 +247,7 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   background-color: rgb(215, 215, 215);
+  text-align: justify;
 }
 
 .flip-card-front img {
@@ -270,4 +273,93 @@ footer {
   gap: 20px;
   max-width: 700px;
   margin: 40px auto;
+}
+
+.link-btn {
+  width: 40px;
+  height: 40px;
+  border: 10px solid white;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 1s, border-color 1s;
+  justify-content: center;
+}
+
+.link-btn:hover {
+  background: #0c151d;
+  border-color: #0c151d;
+  color: white;
+}
+
+.jokes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.joke-item h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.joke-item p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.table {
+  width: 75%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  border: none;
+  padding: 12px 15px;
+  text-align: justify;
+  vertical-align: top;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  background-color: #e9ebec;
+  font-weight: bold;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+}
+
+.card-body h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
 }

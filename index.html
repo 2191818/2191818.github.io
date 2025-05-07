@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,7 +22,9 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
-    <button class="mode-toggle-btn" aria-label="Toggle dark mode"><i class="fa-regular fa-lightbulb"></i></button>
+    <button class="mode-toggle-btn" aria-label="Toggle dark mode">
+      <i class="fa-regular fa-lightbulb"></i>
+    </button>
     <br />
     <header class="profile-card">
       <div class="profile-pic-square">
@@ -32,282 +34,289 @@
         <h1>Muhammad Arsalan Saeed</h1>
         <p>Software Developer</p>
         <div class="social-icons">
-            <a href="https://github.com/2191818" target="_blank" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/muhammad-arsalan-saeed/" target="_blank" aria-label="Linkedin">
-                <i class="fa-brands fa-linkedin"></i>              </a>
-              <a href="https://www.instagram.com/arsalan.360/" target="_blank" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
+          <a
+            href="https://github.com/2191818"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-arsalan-saeed/"
+            target="_blank"
+            aria-label="Linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/arsalan.360/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </div>
     </header>
 
-    <section id="workContact" style="text-align: center;">
-        <a
-          href="MuhammadArsalanSaeedCV.pdf"
-          download="MuhammadArsalanSaeedCV.pdf"
-          class="custom-btn"
-        >
-          Download Resume <i class="fa-solid fa-arrow-down"></i>
-        </a>
-      
-        <a
-          href="contact.html"
-          class="custom-btn"
-        >
-          Contact Me 
-        </a>
-      </section>
-    
-      <div class="work-card">
-        <button type="button" class="toggle-btn active" onclick="showSection('projects')">Projects</button>
-        <button type="button" class="toggle-btn" onclick="showSection('skills')">Skills</button>
+    <section class="jokes">
+      <div class="joke-item">
+        <h2>10+</h2>
+        <p>"What Am I<br />Looking At!"</p>
       </div>
-      
-      <div id="projects" class="content-section">
-        <div class="card-grid">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/nba.png" alt="nba-api">
-              </div>
-              <div class="flip-card-back">
-                <h3>nba-api</h3>
-                <p>Description 1</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/gauge.jpeg" alt="IotDashboard">
-              </div>
-              <div class="flip-card-back">
-                <h3>IotDashboard</h3>
-                <p>Description 2</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/book.png" alt="Library Catalog">
-              </div>
-              <div class="flip-card-back">
-                <h3>Library Catalog</h3>
-                <p>Description 2</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/tablogo.png" alt="Riffat's Cuisine">
-              </div>
-              <div class="flip-card-back">
-                <h3>Riffat's Cuisine</h3>
-                <p>Description 2</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/vanierlogo.png" alt="Hotel Vanier">
-              </div>
-              <div class="flip-card-back">
-                <h3>Hotel Vanier</h3>
-                <p>Description 2</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/gamelogo.png" alt="Deadalus Labyrinth">
-              </div>
-              <div class="flip-card-back">
-                <h3>Deadalus Labyrinth</h3>
-                <p>Description 2</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="joke-item">
+        <h2>15+</h2>
+        <p>Code<br />Breakdowns</p>
       </div>
-      
-      <div id="skills" class="content-section" style="display: none; text-align: center;">
-        <p>Using Now: </p>
-        <div class="skills-card">
-          <div class="skill-item">
-            <i style="background-color: black; color: #efd81d;" class="fa-brands fa-js"></i>          
-            <p>JAVASCRIPT</p>
-          </div>
-          <div class="skill-item">
-            <i style="color: #5ed3f3;" class="fa-brands fa-react"></i>
-            <p>TYPESCRIPT</p>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-code"></i>
-            <p>BASH</p>
-          </div>
-          <div class="skill-item">
-            <i style="color: #6a1577;" class="fa-brands fa-c"></i>          
-            <p>C#</p>
-          </div>
-          <div class="skill-item">
-            <i style="color: #7377ad;" class="fa-brands fa-php"></i>          
-            <p>PHP</p>
-          </div>
-          <div class="skill-item">
-            <i style="color: #f0931c;" class="fa-brands fa-java"></i>          
-            <p>JAVA</p>
-          </div>
-          <div class="skill-item">
-            <i style="color: #f7d54d;" class="fa-brands fa-python"></i>          
-            <p>PYTHON</p>
-          </div>
-          <div class="skill-item">
-            <i style="color: #dd4b25;" class="fa-brands fa-css3-alt"></i>
-            <i style="color: #254bdd;" class="fa-brands fa-html5"></i>          
-            <p>HTML/CSS</p>
-          </div>
-          </div>
-          <p>Other Skills: </p>
-          <div class="skills-card">
-            <div class="skill-item">
-              <i style="background-color: black; color: #efd81d;" class="fa-brands fa-js"></i>          
-              <p>JAVASCRIPT</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #5ed3f3;" class="fa-brands fa-react"></i>
-              <p>TYPESCRIPT</p>
-            </div>
-            <div class="skill-item">
-              <i class="fa-solid fa-code"></i>
-              <p>BASH</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #6a1577;" class="fa-brands fa-c"></i>          
-              <p>C#</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #7377ad;" class="fa-brands fa-php"></i>          
-              <p>PHP</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #f0931c;" class="fa-brands fa-java"></i>          
-              <p>JAVA</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #f7d54d;" class="fa-brands fa-python"></i>          
-              <p>PYTHON</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #dd4b25;" class="fa-brands fa-css3-alt"></i>
-              <i style="color: #254bdd;" class="fa-brands fa-html5"></i>          
-              <p>HTML/CSS</p>
-            </div>
-            </div>
-          <p>Development Tools: </p>
-          <div class="skills-card">
-            <div class="skill-item">
-              <i style="background-color: black; color: #efd81d;" class="fa-brands fa-js"></i>          
-              <p>JAVASCRIPT</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #5ed3f3;" class="fa-brands fa-react"></i>
-              <p>TYPESCRIPT</p>
-            </div>
-            <div class="skill-item">
-              <i class="fa-solid fa-code"></i>
-              <p>BASH</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #6a1577;" class="fa-brands fa-c"></i>          
-              <p>C#</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #7377ad;" class="fa-brands fa-php"></i>          
-              <p>PHP</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #f0931c;" class="fa-brands fa-java"></i>          
-              <p>JAVA</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #f7d54d;" class="fa-brands fa-python"></i>          
-              <p>PYTHON</p>
-            </div>
-            <div class="skill-item">
-              <i style="color: #dd4b25;" class="fa-brands fa-css3-alt"></i>
-              <i style="color: #254bdd;" class="fa-brands fa-html5"></i>          
-              <p>HTML/CSS</p>
-            </div>
-            </div>
-          <p>Relavent Coursework</p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Course</th>
-                <th scope="col">Relevancy</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Programming I & II</th>
-                <td>Programming I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Programming Patterns</th>
-                <td>Programming Patterns</td>
-              </tr>
-              <tr>
-                <th scope="row">Application Development I & II</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Internet Programming</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">eCommerce</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Web Services</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Internet of Things</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Game Programming I & II</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Advanced Networks,</th>
-                <td>Application Development I & II</td>
-              </tr>
-              <tr>
-                <th scope="row">Ethical Hacking</th>
-                <td>Application Development I & II</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="joke-item">
+        <h2>20+</h2>
+        <p>Sleepless<br />Nights</p>
+      </div>
+    </section>
 
-      <script src="scripts.js"></script>
-      
-    <div class="about-card">
-        <button type="button" class="custom-btn">About Me</button>
-        <button type="button" class="custom-btn">About Site</button>
+    <section id="workContact" style="text-align: center">
+      <a
+        href="MuhammadArsalanSaeedCV.pdf"
+        download="MuhammadArsalanSaeedCV.pdf"
+        class="custom-btn active"
+      >
+        Download Resume <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+      <a href="contact.html" class="custom-btn"> Contact Me </a>
+    </section>
+
+    <div class="work-card">
+      <button
+        type="button"
+        class="toggle-btn active"
+        onclick="showSection('projects')"
+      >
+        Projects
+      </button>
+      <button type="button" class="toggle-btn" onclick="showSection('skills')">
+        Skills
+      </button>
     </div>
-    
-    <footer >
-      <div >
-      <p>Muhammad Arsalan Saeed. 2025 All Rights Reserved</p>
+
+    <div id="projects" class="content-section">
+      <div class="card-grid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/nba.png" alt="nba-api" />
+            </div>
+            <div class="flip-card-back">
+              <h3>nba-api</h3>
+              <p>
+                PHP RESTful API with the Slim framework for accessing
+                NBA-related resources via URI
+              </p>
+              <a href="" class="link-btn"><i class="fa-solid fa-link"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/gauge.jpeg" alt="IotDashboard" />
+            </div>
+            <div class="flip-card-back">
+              <h3>IotDashboard</h3>
+              <p>
+                Smart home system integrating sensors, RFID, and motors, with a
+                Python-based dashboard for real-time control and customization
+                of home settings.
+              </p>
+              <a href="" class="link-btn"><i class="fa-solid fa-link"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/book.png" alt="Library Catalog" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Library Catalog</h3>
+              <p>
+                Library catalog system is a React-based web application with
+                Node.js, and Express.js. Management of a library's collection,
+                including books, news articles, and papers.
+              </p>
+              <a href="" class="link-btn"><i class="fa-solid fa-link"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/tablogo.png" alt="Riffat's Cuisine" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Riffat's Cuisine</h3>
+              <p>
+                PHP web application for placing food orders with user-friendly
+                features
+              </p>
+              <a href="" class="link-btn"><i class="fa-solid fa-link"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/vanierlogo.png" alt="Hotel Vanier" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Hotel Vanier</h3>
+              <p>
+                C# GUI-based application designed to assist employees in
+                managing customer information and reservations
+              </p>
+              <a href="" class="link-btn"><i class="fa-solid fa-link"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/gamelogo.png" alt="Deadalus Labyrinth" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Deadalus Labyrinth</h3>
+              <p>Description 2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="skills"
+      class="content-section"
+      style="display: none; text-align: center; font-weight: bold"
+    >
+      <p>Current Skills:</p>
+      <div class="skills-card">
+        <div class="skill-item">
+          <i style="color: #5ed3f3" class="fa-brands fa-react"></i>
+          <p>REACT FRAMEWORK</p>
+        </div>
+        <div class="skill-item">
+          <i
+            class="fa-brands fa-js"
+            style="background-color: black; color: #efd81d"
+          ></i>
+          <p>JAVASCRIPT</p>
+        </div>
+        <div class="skill-item">
+          <i style="color: #5ed3f3" class="fa-brands fa-react"></i>
+          <p>TYPESCRIPT</p>
+        </div>
+        <div class="skill-item">
+          <i style="color: #254bdd" class="fa-brands fa-html5"></i>
+          <i style="color: #dd4b25" class="fa-brands fa-css3-alt"></i>
+          <p>HTML/CSS</p>
+        </div>
+        <div class="skill-item">
+          <i style="color: #005287" class="fa-solid fa-database"></i>
+          <p>SQL</p>
+        </div>
+        <div class="skill-item">
+          <i style="color: #e84d31" class="fa-brands fa-git"></i>
+          <p>GIT</p>
+        </div>
+      </div>
+      <p>Other Skills:</p>
+      <div class="skills-card">
+        <div class="skill-item">
+          <i class="fa-brands fa-php" style="color: #7377ad"></i>
+          <p>PHP</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-solid fa-flask" style="color: #4eb3c5"></i>
+          <p>FLASK FRAMEWORK</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-python" style="color: #f7d54d"></i>
+          <p>PYTHON</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-java" style="color: #f0931c"></i>
+          <p>JAVA</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-solid fa-terminal" style="color: #2cb8f6"></i>
+          <p>DART</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-solid fa-mobile-screen" style="color: #5290f0"></i>
+          <p>FLUTTER</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-linux" style="color: #363636"></i>
+          <p>LINUX</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-ubuntu" style="color: #e14d0f"></i>
+          <p>BASH/SHELL</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-c" style="color: #6a1577"></i>
+          <p>C#</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-aws" style="color: #e84d31"></i>
+          <p>AWS</p>
+        </div>
+      </div>
+      <p>Development Tools:</p>
+      <div class="skills-card">
+        <div class="skill-item">
+          <i class="fa-brands fa-github" style="color: #58267c"></i>
+          <p>GITHUB</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-node-js" style="color: #558f4c"></i>
+          <p>NODE.JS</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-android" style="color: #30d780"></i>
+          <p>ANDROID STUDIO</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-unity" style="color: #4a4a4a"></i>
+          <p>UNITY</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-solid fa-file-code" style="color: #017fcc"></i>
+          <p>VISUAL STUDIO CODE</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-solid fa-file-code" style="color: #9d73d8"></i>
+          <p>VISUAL STUDIO</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-solid fa-server" style="color: #fb7a24"></i>
+          <p>XAMPP</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <div class="about-card">
+      <a style="text-align: center" class="custom-btn" href="aboutme.html"
+        >About Me</a
+      >
+      <a style="text-align: center" class="custom-btn" href="aboutste.html"
+        >About Site</a
+      >
+    </div>
+    <footer>
+      <div>
+        <p>Muhammad Arsalan Saeed. 2025 All Rights Reserved</p>
       </div>
     </footer>
   </body>
